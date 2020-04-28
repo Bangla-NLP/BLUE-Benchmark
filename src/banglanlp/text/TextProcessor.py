@@ -41,7 +41,7 @@ class EnglishWordProcessor(TextProcessor):
 
 
 
-BAD_SYMBOL = '—৷' # TODO: move to unicodebased removal
+BAD_SYMBOL = '—৷”…॥' # TODO: move to unicodebased removal
 
 class BanglaWordProcessor(TextProcessor):
     """ Word Processor for Bangla text"""
