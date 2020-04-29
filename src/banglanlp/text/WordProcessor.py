@@ -59,7 +59,7 @@ class BanglaWordProcessor(WordProcessor):
 # Utility functions 
 
 def remove_extra_space(text):
-    return re.sub('\s+','\s',text).strip()
+    return re.sub('\s+','',text).strip()
 
 def to_lower(text):
     """
