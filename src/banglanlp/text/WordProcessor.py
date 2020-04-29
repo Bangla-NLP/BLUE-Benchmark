@@ -7,7 +7,7 @@
 from abc import ABCMeta, abstractmethod
 import re, string
 
-class TextProcessor(object):
+class WordProcessor(object):
     """
     This is a generic class for cleaning and preprocessing text
     Inherit this class for your custom processor
@@ -27,7 +27,7 @@ class TextProcessor(object):
 
 
 
-class EnglishWordProcessor(TextProcessor):
+class EnglishWordProcessor(WordProcessor):
     """ Word Processor for English text"""
     
     def __init__(self):
@@ -43,7 +43,7 @@ class EnglishWordProcessor(TextProcessor):
 
 BAD_SYMBOL = '—৷”…॥' # TODO: move to unicodebased removal
 
-class BanglaWordProcessor(TextProcessor):
+class BanglaWordProcessor(WordProcessor):
     """ Word Processor for Bangla text"""
     
     def __init__(self):
